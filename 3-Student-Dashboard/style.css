@@ -1,0 +1,74 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #243047;
+    background: #f1f5f9;
+    line-height: 1.5;
+}
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 5%;
+    color: white;
+    background: #0f766e;
+}
+.topbar h1 { margin: 0; font-size: 1.6rem; }
+.topbar p { margin: 0; }
+.layout { display: flex; min-height: 80vh; }
+.sidebar {
+    width: 220px;
+    flex-shrink: 0;
+    padding: 25px 18px;
+    background: #134e4a;
+}
+.sidebar h2 { color: white; font-size: 1.2rem; }
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin: 6px 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.sidebar a:hover { background: #0f766e; }
+.content { flex: 1; padding: 28px; min-width: 0; }
+.content h2 { margin-top: 0; }
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin: 22px 0;
+}
+.summary-card, .panel {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 12px #0000000b;
+}
+.summary-card p { color: #64748b; margin: 0; }
+.summary-card h3 { color: #0f766e; font-size: 2rem; margin: 8px 0 0; }
+.panel { margin: 22px 0; }
+.panel h2 { color: #0f766e; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; min-width: 450px; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #e2e8f0; }
+th { color: white; background: #0f766e; }
+tbody tr:nth-child(even) { background: #f8fafc; }
+.attendance-item { margin: 18px 0; }
+.attendance-item p { display: flex; justify-content: space-between; }
+.track { height: 12px; background: #dbeafe; border-radius: 10px; overflow: hidden; }
+.fill { height: 100%; background: #14b8a6; border-radius: 10px; }
+.schedule li, .panel li { margin: 10px 0; }
+.note { color: #64748b; font-size: 0.9rem; }
+footer { padding: 18px; text-align: center; color: white; background: #134e4a; }
+@media (max-width: 700px) {
+    .layout { flex-direction: column; }
+    .sidebar { width: 100%; }
+    .sidebar a { display: inline-block; }
+    .content { padding: 18px; }
+}
