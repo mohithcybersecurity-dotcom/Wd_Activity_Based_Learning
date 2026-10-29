@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Academic Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <h1>Student Dashboard</h1>
+        <p>Academic Overview | 2026</p>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <a href="#overview">Overview</a>
+            <a href="#results">Semester Results</a>
+            <a href="#attendance">Attendance</a>
+            <a href="#schedule">Exam Schedule</a>
+            <a href="#announcements">Announcements</a>
+        </aside>
+
+        <main class="content">
+            <section id="overview">
+                <h2>Welcome, Student!</h2>
+                <p>Here is a summary of your academic progress. Edit the sample details to match your own.</p>
+                <div class="summary-grid">
+                    <article class="summary-card">
+                        <p>Current CGPA</p><h3>8.4</h3>
+                    </article>
+                    <article class="summary-card">
+                        <p>Attendance</p><h3>92%</h3>
+                    </article>
+                    <article class="summary-card">
+                        <p>Subjects</p><h3>6</h3>
+                    </article>
+                    <article class="summary-card">
+                        <p>Assignments Due</p><h3>2</h3>
+                    </article>
+                </div>
+            </section>
+
+            <section id="results" class="panel">
+                <h2>Semester Results</h2>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Subject</th><th>Code</th><th>Marks</th><th>Grade</th></tr></thead>
+                        <tbody>
+                            <tr><td>Web Development</td><td>WD101</td><td>88/100</td><td>A</td></tr>
+                            <tr><td>Programming in C</td><td>CS102</td><td>82/100</td><td>A</td></tr>
+                            <tr><td>Mathematics</td><td>MA103</td><td>79/100</td><td>B+</td></tr>
+                            <tr><td>Database Systems</td><td>DB104</td><td>91/100</td><td>A+</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="attendance" class="panel">
+                <h2>Subject Attendance</h2>
+                <div class="attendance-item">
+                    <p>Web Development <strong>95%</strong></p>
+                    <div class="track"><div class="fill" style="width:95%"></div></div>
+                </div>
+                <div class="attendance-item">
+                    <p>Programming in C <strong>88%</strong></p>
+                    <div class="track"><div class="fill" style="width:88%"></div></div>
+                </div>
+                <div class="attendance-item">
+                    <p>Mathematics <strong>82%</strong></p>
+                    <div class="track"><div class="fill" style="width:82%"></div></div>
+                </div>
+            </section>
+
+            <section id="schedule" class="panel">
+                <h2>Examination Schedule</h2>
+                <ul class="schedule">
+                    <li><strong>10 Nov 2026</strong> — Web Development</li>
+                    <li><strong>12 Nov 2026</strong> — Programming in C</li>
+                    <li><strong>15 Nov 2026</strong> — Mathematics</li>
+                </ul>
+                <p class="note">Sample dates only. Replace them with your official timetable.</p>
+            </section>
+
+            <section id="announcements" class="panel">
+                <h2>Announcements</h2>
+                <ul>
+                    <li>Submit the web development assignment before the deadline.</li>
+                    <li>Check with your department for the final examination timetable.</li>
+                    <li>Contact your faculty advisor if you need academic support.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer>© 2026 Student Academic Dashboard</footer>
+</body>
+</html>
